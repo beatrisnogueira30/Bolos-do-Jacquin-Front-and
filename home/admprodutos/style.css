@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --corPrincipal: #fff4f4;
-    --fontHanken:"Hanken Grotesk", sans-serif;
-    --corDourado: #c5a028
-    
+    --fontHanken: "Hanken Grotesk", sans-serif;
+    --corDourado: #c5a028;
+    --corSecundaria: #fdf8f8;
 }
 
-.container{
+.container {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
@@ -26,43 +26,44 @@ h1 {
     overflow: hidden;
 }
 
-header{
+header {
     background-color: var(--corPrincipal);
 }
 
-.header_container{
+.header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 120px;
 }
-.box_busca{
+
+.box_busca {
     position: relative;
 }
 
-.box_busca svg{
+.box_busca svg {
     width: 20px;
     position: absolute;
     fill: #747878;
 
 }
 
-.box_busca input{
+.box_busca input {
     padding-left: 25px;
     padding-bottom: 5px;
     background-color: transparent;
     border: none;
     border-bottom: solid 1px #747878;
     font-size: 20px;
-    
+
 }
 
-.box_busca input:focus{
+.box_busca input:focus {
     outline: none;
 }
 
 
-.link_inicio{
+.link_inicio {
     color: #CCCC;
     text-decoration: none;
     font-size: 20px;
@@ -70,14 +71,14 @@ header{
     text-align: center;
 }
 
-.link_inicio span{
+.link_inicio span {
     color: #444444;
     position: absolute;
     left: -5px;
     top: 8px;
 }
 
-.link_inicio hr{
+.link_inicio hr {
     margin-top: 7px;
     width: 100px;
     background-color: var(--corDourado);
@@ -87,26 +88,27 @@ header{
 }
 
 /* ------- BOTAO DO MENU  ------------ */
-.header_container button{
+.header_container button {
     background-color: transparent;
     border: none;
     display: none;
 }
 
-.header_container button svg{
+.header_container button svg {
     width: 50px;
 }
 
 
 /* ------- SECAO CADASTRO DE PRODUTOS  ------------ */
-.cad_container{
+.cad_container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 0;
+
 }
 
-.icon_jacquin{
+.icon_jacquin {
     width: 200px;
 }
 
@@ -150,49 +152,52 @@ header{
 
 
 }
+
 /* ------- Formulario  ------------ */
-form{
+form {
     /* background-color: aquamarine; */
     width: 100%;
 
 }
 
-.inputs_form{
+.inputs_form {
     display: flex;
     justify-content: space-around;
     width: 100%;
     max-width: 1200px;
 }
 
-.if_coluna{
+.if_coluna {
     display: flex;
     flex-direction: column;
 }
 
-.if_linha{
+.if_linha {
     display: flex;
 }
 
-.input_img svg{
+.input_img svg {
     width: 24px;
 }
 
 .form_coluna1,
-.form_coluna2{
-    width: 414px;
+.form_coluna2 {
+    max-width: 414PX;
+    width: 45%;
 }
+
 .input_img span,
-form label{
+form label {
     font-family: var(--fontHanken);
     text-transform: uppercase;
     color: #444444;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 
 .inputs_form input[type=text],
-.inputs_form textarea{
+.inputs_form textarea {
     background-color: transparent;
     border: none;
     border-bottom: solid 1px #444444;
@@ -200,19 +205,20 @@ form label{
 }
 
 .inputs_form input[type=text]:focus,
-.inputs_form textarea:focus{
+.inputs_form textarea:focus {
     outline: none;
 }
 
-.linha_form{
+.linha_form {
     margin-bottom: 10px;
 }
 
-.inputs_form input[ type=file]{
+.inputs_form input[ type=file] {
     display: none;
+
 }
 
-.input_img label{
+.input_img label {
     /* background-color: blueviolet; */
     display: flex;
     align-items: center;
@@ -221,67 +227,144 @@ form label{
     border: solid 1px #444444;
 }
 
-.input_img label:hover{
+.input_img label:hover {
     cursor: pointer;
 }
 
-form input[type=checkbox]
-form input[type=text]{
+form input[type=checkbox] form input[type=text] {
     height: 25px;
 }
 
-.input_cat input{
-    width: 314px;
-    margin: right 20px; ;
+.input_cat {
+    width: 79%;
 }
 
-.input_valor input{
+.input_cat input {
+    max-width: 314px;
+    max-width: 314px;
+}
+
+
+.input_valor {
+    width: 97%;
+}
+
+
+.input_valor input {
     margin-right: 20px;
-    width: 360px;
+    max-width: 360px;
 }
 
-form input[type=button]{
+form input[type=button] {
     margin: 100px auto 0%;
     display: block;
 
+    font-family: var(--fontHanken);
     font-weight: 500px;
     font-size: 12px;
     text-transform: uppercase;
     color: #fff4f4;
     text-decoration: none;
+    text-decoration: none;
     background-color: #000;
-    padding: 16px 40px;
+    padding: 16px 55px;
     border: none;
     letter-spacing: 3px;
-    font-family: var(--fontHanken);
+    font-weight: 500px;
+    cursor: pointer;
 }
+
+
+
+/* --------lista de produtos--------------- */
+.list_produtos{
+    background-color: var(--corSecundaria);
+}
+
+
+table{
+    background-color: aquamarine;
+    width: 100%;
+    font-family: var(--fontHanken);
+    text-transform: uppercase;
+
+}
+
+thead{
+    font-size: 12px;
+    font-weight: 600;
+    color: #444444;
+}
+
+tbody{
+    color: #aaaa;
+
+}
+
+
+table svg{
+    width: 35px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /* ------- Medias  ------------ */
-@media screen and (max-width: 768px){
-    .header_container button{
+@media screen and (max-width: 768px) {
+    .header_container button {
         display: block;
+
+
+
     }
+
     .link_inicio,
-    .box_busca{
+    .box_busca {
         display: none;
     }
 
-    .box_h2 h2{
+    .box_h2 h2 {
         font-size: 32px;
-        
-    }
-    .box_h2 span{
-    font-size: 20px;
-    bottom: -18px;
+
     }
 
-    .box_h2 hr{
-    margin-top: 10px;
-    width: 70%;
+    .box_h2 span {
+        font-size: 20px;
+        bottom: -18px;
     }
 
+    .box_h2 hr {
+        margin-top: 10px;
+        width: 70%;
+    }
+
+    
+    /* ---------- Formulario ---------*/
+    .inputs_form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form_coluna1,
+    .form_coluna2{
+        max-width: 500px;
+        width: 80%;
+    }
 }
-
